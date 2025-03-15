@@ -1,0 +1,146 @@
+2025-03-14 16:40:59.385 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2025-03-14 16:40:59.390 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2025-03-14 16:40:59.657 | ERROR    | translator.translation_chain:run:41 - An error occurred during translation: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-03-14 16:40:59.716 | ERROR    | translator.translation_chain:run:41 - An error occurred during translation: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-03-14 16:40:59.716 | DEBUG    | book.content:set_translation:54 - [translation]
+
+2025-03-14 16:40:59.718 | DEBUG    | book.content:set_translation:63 - [translated_df]
+Empty DataFrame
+Columns: []
+Index: []
+2025-03-14 16:40:59.718 | DEBUG    | translator.writer:save_translated_book:18 - markdown
+2025-03-14 16:40:59.718 | INFO     | translator.writer:_save_translated_book_markdown:90 - 开始导出: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-14 16:40:59.718 | INFO     | translator.writer:save_translated_book:28 - 翻译完成，文件保存至: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-14 16:47:31.667 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2025-03-14 16:47:31.672 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2025-03-14 16:47:54.774 | DEBUG    | book.content:set_translation:54 - [translation]
+[水果, 颜色, 价格（美元）]
+[苹果, 红色, 1.20]
+[香蕉, 黄色, 0.50]
+[橙子, 橙色, 0.80]
+[草莓, 红色, 2.50]
+[蓝莓, 蓝色, 3.00]
+[猕猴桃, 绿色, 1.00]
+[芒果, 橙色, 1.50]
+[葡萄, 紫色, 2.00]
+2025-03-14 16:47:54.776 | DEBUG    | book.content:set_translation:63 - [translated_df]
+Empty DataFrame
+Columns: [水果, 颜色, 价格（美元）]
+Index: []
+2025-03-14 16:47:54.776 | DEBUG    | translator.writer:save_translated_book:18 - markdown
+2025-03-14 16:47:54.776 | INFO     | translator.writer:_save_translated_book_markdown:90 - 开始导出: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-14 16:47:54.777 | INFO     | translator.writer:save_translated_book:28 - 翻译完成，文件保存至: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-14 16:54:37.011 | DEBUG    | __main__:translation:12 - [翻译任务]
+源文件: C:\Users\dell\AppData\Local\Temp\gradio\7032e1730760f697ecebaeb16226d00669ff263800cd7e019368383de69e0b32\test.pdf
+源语言: English
+目标语言: Chinese
+2025-03-14 16:54:37.155 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ Test Data
+This dataset contains two test samples provided by ChatGPT, an AI language model by OpenAI.
+These samples include a markdown table and an English text passage, which can be used to test an
+English-to-Chinese translation software supporting both text and table formats.
+Text testing
+The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+alphabet at least once. Pangrams are often used to test fonts, keyboards, and other text-related
+tools. In addition to English, there are pangrams in many other languages. Some pangrams are more
+difficult to construct due to the unique characteristics of the language.
+Table Testing
+2025-03-14 16:54:37.160 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2025-03-14 16:55:04.630 | DEBUG    | book.content:set_translation:54 - [translation]
+[水果, 颜色, 价格 (美元)]  
+[苹果, 红色, 1.20]  
+[香蕉, 黄色, 0.50]  
+[橙子, 橙色, 0.80]  
+[草莓, 红色, 2.50]  
+[蓝莓, 蓝色, 3.00]  
+[猕猴桃, 绿色, 1.00]  
+[芒果, 橙色, 1.50]  
+[葡萄, 紫色, 2.00]
+2025-03-14 16:55:04.635 | DEBUG    | book.content:set_translation:63 - [translated_df]
+       水果  颜色 价格 (美元)
+0   \n[苹果  红色     1.2
+1   \n[香蕉  黄色     0.5
+2   \n[橙子  橙色     0.8
+3   \n[草莓  红色     2.5
+4   \n[蓝莓  蓝色     3.0
+5  \n[猕猴桃  绿色     1.0
+6   \n[芒果  橙色     1.5
+7   \n[葡萄  紫色    2.00
+2025-03-14 16:55:04.635 | DEBUG    | translator.writer:save_translated_book:18 - markdown
+2025-03-14 16:55:04.635 | INFO     | translator.writer:_save_translated_book_markdown:90 - 开始导出: C:\Users\dell\AppData\Local\Temp\gradio\7032e1730760f697ecebaeb16226d00669ff263800cd7e019368383de69e0b32\test_translated.md
+2025-03-14 16:55:04.636 | INFO     | translator.writer:save_translated_book:28 - 翻译完成，文件保存至: C:\Users\dell\AppData\Local\Temp\gradio\7032e1730760f697ecebaeb16226d00669ff263800cd7e019368383de69e0b32\test_translated.md
+2025-03-15 10:08:11.058 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2025-03-15 10:08:31.180 | DEBUG    | book.content:set_translation:54 - [translation]
+[水果, 颜色, 价格（美元）]  
+[苹果, 红色, 1.20]  
+[香蕉, 黄色, 0.50]  
+[橙子, 橙色, 0.80]  
+[草莓, 红色, 2.50]  
+[蓝莓, 蓝色, 3.00]  
+[猕猴桃, 绿色, 1.00]  
+[芒果, 橙色, 1.50]  
+[葡萄, 紫色, 2.00]
+2025-03-15 10:08:31.185 | DEBUG    | book.content:set_translation:63 - [translated_df]
+       水果  颜色 价格（美元）
+0   \n[苹果  红色    1.2
+1   \n[香蕉  黄色    0.5
+2   \n[橙子  橙色    0.8
+3   \n[草莓  红色    2.5
+4   \n[蓝莓  蓝色    3.0
+5  \n[猕猴桃  绿色    1.0
+6   \n[芒果  橙色    1.5
+7   \n[葡萄  紫色   2.00
+2025-03-15 10:08:31.185 | DEBUG    | translator.writer:save_translated_book:18 - markdown
+2025-03-15 10:08:31.185 | INFO     | translator.writer:_save_translated_book_markdown:90 - 开始导出: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-15 10:08:31.186 | INFO     | translator.writer:save_translated_book:28 - 翻译完成，文件保存至: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-15 10:10:51.278 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]
+2025-03-15 10:11:11.637 | DEBUG    | book.content:set_translation:54 - [translation]
+[水果, 颜色, 价格（美元）]  
+[苹果, 红色, 1.20]  
+[香蕉, 黄色, 0.50]  
+[橙子, 橙色, 0.80]  
+[草莓, 红色, 2.50]  
+[蓝莓, 蓝色, 3.00]  
+[猕猴桃, 绿色, 1.00]  
+[芒果, 橙色, 1.50]  
+[葡萄, 紫色, 2.00]
+2025-03-15 10:11:11.641 | DEBUG    | book.content:set_translation:63 - [translated_df]
+       水果  颜色 价格（美元）
+0   \n[苹果  红色    1.2
+1   \n[香蕉  黄色    0.5
+2   \n[橙子  橙色    0.8
+3   \n[草莓  红色    2.5
+4   \n[蓝莓  蓝色    3.0
+5  \n[猕猴桃  绿色    1.0
+6   \n[芒果  橙色    1.5
+7   \n[葡萄  紫色   2.00
+2025-03-15 10:11:11.642 | DEBUG    | translator.writer:save_translated_book:18 - markdown
+2025-03-15 10:11:11.642 | INFO     | translator.writer:_save_translated_book_markdown:90 - 开始导出: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-15 10:11:11.642 | INFO     | translator.writer:save_translated_book:28 - 翻译完成，文件保存至: D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test_translated.md
+2025-03-15 10:55:23.579 | DEBUG    | translator.pdf_parser:parse_pdf:54 - [table]
+[Fruit, Color, Price (USD)] [Apple, Red, 1.20] [Banana, Yellow, 0.50] [Orange, Orange, 0.80] [Strawberry, Red, 2.50] [Blueberry, Blue, 3.00] [Kiwi, Green, 1.00] [Mango, Orange, 1.50] [Grape, Purple, 2.00]

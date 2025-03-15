@@ -1,0 +1,7 @@
+model_name: "deepseek-chat"
+input_file: 'D:\ZTT\openai-quickstart-main\langchain\openai-translator\tests\test.pdf'
+output_file_format: "markdown"
+source_language: "English"
+target_language: "Chinese"
+pages: 2
+api_key: "sk-21428fdcb3f54ab18d32b933df56256e"
