@@ -11,3 +11,4 @@ langchain
 gradio
 
 numpy
+matplotlib
