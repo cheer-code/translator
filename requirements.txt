@@ -9,4 +9,5 @@ loguru
 openai
 langchain
 gradio
-flas
+flask
+numpy
