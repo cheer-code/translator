@@ -9,4 +9,4 @@ loguru
 openai
 langchain
 gradio
-flask
+flas
